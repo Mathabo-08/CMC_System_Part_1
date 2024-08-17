@@ -1,0 +1,54 @@
+﻿<Window x:Class="CMC_System.SubmitClaim"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CMC_System"
+        mc:Ignorable="d"
+        Title="SubmitClaim" Background="LightSteelBlue" Height="650" Width="800">
+    
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <!-- Labels and input fields -->
+            <RowDefinition Height="Auto"/>
+            <!-- Spacer -->
+            <RowDefinition Height="Auto"/>
+            <!-- The buttons -->
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Border CornerRadius="10" Background="#FFCC99" BorderThickness="2" BorderBrush="Black">
+            <!-- Form fields for claim submission -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0">
+                <StackPanel Orientation="Vertical" Margin="10">
+                    <Label Content="Lecturer Name:" FontWeight="Bold"/>
+                    <TextBox x:Name="LecturerNameTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
+
+                    <Label Content="Lecturer Surname:" FontWeight="Bold"/>
+                    <TextBox x:Name="LecturerSurnameTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
+
+                    <Label Content="Lecturer Email:" FontWeight="Bold"/>
+                    <TextBox x:Name="LecturerEmailTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
+
+                    <Label Content="Lecturer Contact Number:" FontWeight="Bold"/>
+                    <TextBox x:Name="LecturerContactNumberTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
+
+                    <Label Content="Contractor Name:" FontWeight="Bold"/>
+                    <TextBox x:Name="ContractorNameTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
+
+                    <Label Content="Contractor Branch Code:" FontWeight="Bold"/>
+                    <TextBox x:Name="ContractorBranchTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
+
+                    <Label Content="Claim Description:" FontWeight="Bold"/>
+                    <TextBox x:Name="ClaimDescriptionTextBox" Width="400" Height="100" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Margin="0,0,0,10"/>
+                    <TextBlock Text="Maximum 100 words" FontStyle="Italic" Margin="0,0,0,10"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+        <!-- StackPanel for buttons to be next to each other in a centeral position -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2">
+            <Button Content="File Upload"  Background="#9999FF"  Margin="15" FontWeight="Bold" Height="35" Width="120"/>
+            <Button Content="Claim Status" Background="#9999FF"  Margin="15" FontWeight="Bold" Height="35" Width="120"/>
+        </StackPanel>
+    </Grid>
+
+</Window>
