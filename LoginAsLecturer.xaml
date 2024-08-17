@@ -32,7 +32,10 @@
                     <TextBox x:Name="LecturerSurnameTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
 
                     <Label Content="Lecturer Email:" FontWeight="Bold"/>
-                <TextBox x:Name="LecturerEmailTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
+                    <TextBox x:Name="LecturerEmailTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
+
+                    <Label Content="Lecturer Password:" FontWeight="Bold"/>
+                    <TextBox x:Name="LecturerPasswordTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
             </StackPanel>
         </Border>
         <!-- StackPanel for buttons to be next to each other in a centeral position -->

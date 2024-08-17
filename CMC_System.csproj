@@ -70,6 +70,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ClaimRespondPage.xaml.cs">
+      <DependentUpon>ClaimRespondPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ClaimStatus.xaml.cs">
       <DependentUpon>ClaimStatus.xaml</DependentUpon>
     </Compile>
@@ -82,6 +85,10 @@
     <Compile Include="SubmitClaim.xaml.cs">
       <DependentUpon>SubmitClaim.xaml</DependentUpon>
     </Compile>
+    <Page Include="ClaimRespondPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ClaimStatus.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
