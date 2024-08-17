@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CMC_System"
         mc:Ignorable="d"
-        Title="LoginAsLecturer" Background="LightSteelBlue" Height="650" Width="800">
+        Title="LoginAsLecturer" Background="#009999" Height="650" Width="800">
     
     <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
         <Grid.RowDefinitions>

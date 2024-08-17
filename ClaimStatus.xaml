@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CMC_System"
         mc:Ignorable="d"
-        Title="ClaimStatus" Background="LightSteelBlue" Height="650" Width="800">
+        Title="ClaimStatus" Background="#009999" Height="650" Width="800">
     <!--Dedined the BooleanToVisibilityConverter to assist with the conditional form that display IF claim is A -->
     <Window.Resources>
         <!-- Define the BooleanToVisibilityConverter -->
@@ -95,8 +95,8 @@
 
         <!-- StackPanel for buttons to be next to each other in a centeral position -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3">
-            <Button Content="Claim Submission"  Background="#9999FF"  Margin="15" FontWeight="Bold" Height="35" Width="120"/>
-            <Button Content="Home" Background="#9999FF"  Margin="15" FontWeight="Bold" Height="35" Width="120"/>
+            <Button Content="Claim Submission"  Background="#9999ff"  Margin="15" FontWeight="Bold" Height="35" Width="120"/>
+            <Button Content="Home" Background="#9999ff"  Margin="15" FontWeight="Bold" Height="35" Width="120"/>
         </StackPanel>
     </Grid>
 </Window>
