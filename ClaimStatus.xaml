@@ -3,9 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:CMC_System" xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:local="clr-namespace:CMC_System"
         mc:Ignorable="d"
         Title="ClaimStatus" Background="LightSteelBlue" Height="650" Width="800">
+    <Window.Resources>
+        <!-- Define the BooleanToVisibilityConverter -->
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+    </Window.Resources>
 
     <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
         <Grid.RowDefinitions>
@@ -45,13 +49,40 @@
                         <TextBlock Text="Enter Bank Details:" FontWeight="Bold" FontSize="18"/>
 
                         <Label Content="Enter Card Number:" FontWeight="Bold"/>
-                        <xctk:WatermarkTextBox Width="400" Height="26" Margin="0,0,0,10" MaxLength="19" Watermark="XXXX-XXXX-XXXX-XXXX"/>
+                        <Grid>
+                            <TextBox x:Name="CardNumberTextBox" Width="400" Height="26" Margin="0,0,0,10" MaxLength="19" />
+                            <TextBlock Text="XXXX-XXXX-XXXX-XXXX" 
+                       Foreground="Gray" 
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Left" 
+                       Margin="5,0,0,0" 
+                       IsHitTestVisible="False" 
+                       Visibility="{Binding ElementName=CardNumberTextBox, Path=IsKeyboardFocusWithin, Converter={StaticResource BooleanToVisibilityConverter}, FallbackValue=Visible}"/>
+                        </Grid>
 
                         <Label Content="Enter Card Security Code:" FontWeight="Bold"/>
-                        <xctk:WatermarkTextBox Width="400" Height="26" Margin="0,0,0,10" MaxLength="3" Watermark="###"/>
+                        <Grid>
+                            <TextBox x:Name="CardSecurityCodeTextBox" Width="400" Height="26" Margin="0,0,0,10" MaxLength="3" />
+                            <TextBlock Text="###" 
+                       Foreground="Gray" 
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Left" 
+                       Margin="5,0,0,0" 
+                       IsHitTestVisible="False" 
+                       Visibility="{Binding ElementName=CardSecurityCodeTextBox, Path=IsKeyboardFocusWithin, Converter={StaticResource BooleanToVisibilityConverter}, FallbackValue=Visible}"/>
+                        </Grid>
 
                         <Label Content="Enter Card Valid Date (MM-YYYY):" FontWeight="Bold"/>
-                        <xctk:WatermarkTextBox Width="400" Height="26" Margin="0,0,0,10" Watermark="MM-YYYY"/>
+                        <Grid>
+                            <TextBox x:Name="CardValidDateTextBox" Width="400" Height="26" Margin="0,0,0,10" />
+                            <TextBlock Text="MM-YYYY" 
+                       Foreground="Gray" 
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Left" 
+                       Margin="5,0,0,0" 
+                       IsHitTestVisible="False" 
+                       Visibility="{Binding ElementName=CardValidDateTextBox, Path=IsKeyboardFocusWithin, Converter={StaticResource BooleanToVisibilityConverter}, FallbackValue=Visible}"/>
+                        </Grid>
 
                         <TextBlock Text="Please ensure the details are correct" FontStyle="Italic" Margin="0,0,0,10"/>
                     </StackPanel>
