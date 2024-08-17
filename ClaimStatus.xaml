@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:CMC_System"
         mc:Ignorable="d"
         Title="ClaimStatus" Background="LightSteelBlue" Height="650" Width="800">
+    <!--Dedined the BooleanToVisibilityConverter to assist with the conditional form that display IF claim is A -->
     <Window.Resources>
         <!-- Define the BooleanToVisibilityConverter -->
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>

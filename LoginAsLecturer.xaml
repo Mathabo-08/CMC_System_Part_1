@@ -5,9 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CMC_System"
         mc:Ignorable="d"
-        Title="LoginAsLecturer" Background="LightSteelBlue" Height="450" Width="800">
+        Title="LoginAsLecturer" Background="LightSteelBlue" Height="650" Width="800">
+    
     <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
         <Grid.RowDefinitions>
+            <!-- The Logo -->
+            <RowDefinition Height="Auto"/>
             <!-- Labels and input fields -->
             <RowDefinition Height="Auto"/>
             <!-- Spacer -->
@@ -15,6 +18,28 @@
             <!-- The buttons -->
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
+        <!-- Image in the second row, centered horizontally -->
+        <Image Source="/Images/at the top.png" Stretch="Fill" Width="350" Height="120"  HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0"/>
+        
+        <!-- Border around the form -->
+        <Border CornerRadius="10" Background="#FFCC99" Margin="28" BorderThickness="2" BorderBrush="Black" Grid.Row="1">
+            <!-- Form fields for claim submission -->
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+                <Label Content="Lecturer Name:" FontWeight="Bold"/>
+                    <TextBox x:Name="LecturerNameTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
 
-        </Grid>
+                    <Label Content="Lecturer Surname:" FontWeight="Bold"/>
+                    <TextBox x:Name="LecturerSurnameTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
+
+                    <Label Content="Lecturer Email:" FontWeight="Bold"/>
+                <TextBox x:Name="LecturerEmailTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
+            </StackPanel>
+        </Border>
+        <!-- StackPanel for buttons to be next to each other in a centeral position -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3">
+            <Button Content="Home"  Background="#9999FF"  Margin="15" FontWeight="Bold" Height="35" Width="120"/>
+            <Button Content="Submit" Background="#9999FF"  Margin="15" FontWeight="Bold" Height="35" Width="120"/>
+        </StackPanel>
+
+    </Grid>
 </Window>
