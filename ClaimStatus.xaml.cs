@@ -23,5 +23,10 @@ namespace CMC_System
         {
             InitializeComponent();
         }
+
+        private void ClaimStatusTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
