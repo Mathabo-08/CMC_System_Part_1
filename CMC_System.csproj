@@ -73,10 +73,24 @@
     <Compile Include="ClaimStatus.xaml.cs">
       <DependentUpon>ClaimStatus.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LoginAsContractor.xaml.cs">
+      <DependentUpon>LoginAsContractor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAsLecturer.xaml.cs">
+      <DependentUpon>LoginAsLecturer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SubmitClaim.xaml.cs">
       <DependentUpon>SubmitClaim.xaml</DependentUpon>
     </Compile>
     <Page Include="ClaimStatus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginAsContractor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginAsLecturer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
