@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CMC_System"
         mc:Ignorable="d"
-        Title="SubmitClaim" Background="#009999" Height="650" Width="800">
+        Title="SubmitClaim" Background="#009999" Height="750" Width="800">
     
     <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
         <Grid.RowDefinitions>
@@ -29,23 +29,28 @@
                     <Label Content="Lecturer Email:" FontWeight="Bold"/>
                     <TextBox x:Name="LecturerEmailTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
 
-                    <Label Content="Lecturer Contact Number:" FontWeight="Bold"/>
-                    <TextBox x:Name="LecturerContactNumberTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
+                    <Label Content="Employee Number:" FontWeight="Bold"/>
+                    <TextBox x:Name="EmployeeNumberTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
 
-                    <Label Content="Contractor Name:" FontWeight="Bold"/>
-                    <TextBox x:Name="ContractorNameTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
+                    <Label Content="Module Code:" FontWeight="Bold"/>
+                    <TextBox x:Name="ModuleCodeTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
 
-                    <Label Content="Contractor Branch Code:" FontWeight="Bold"/>
-                    <TextBox x:Name="ContractorBranchTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
+                    <Label Content="Program:" FontWeight="Bold"/>
+                    <TextBox x:Name="ProgramTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
 
-                    <Label Content="Claim Description:" FontWeight="Bold"/>
-                    <TextBox x:Name="ClaimDescriptionTextBox" Width="400" Height="100" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Margin="0,0,0,10"/>
-                    <TextBlock Text="Maximum 100 words" FontStyle="Italic" Margin="0,0,0,10"/>
+                    <Label Content="Monthly hours worked:" FontWeight="Bold"/>
+                    <TextBox x:Name="MonthlyHoursWorkedTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
+
+                    <Label Content="Hourly Rate:" FontWeight="Bold"/>
+                    <TextBox x:Name="HourlyRateTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
+
                 </StackPanel>
             </StackPanel>
         </Border>
         <!-- StackPanel for buttons to be next to each other in a centeral position -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2">
+            <Button Content="Add another module"  Background="#9999FF"  Margin="15" FontWeight="Bold" Height="35" Width="125"/>
+            <Button Content="Submit Claim" Background="#9999FF"  Margin="15" FontWeight="Bold" Height="35" Width="120"/>
             <Button Content="File Upload"  Background="#9999FF"  Margin="15" FontWeight="Bold" Height="35" Width="120"/>
             <Button Content="Claim Status" Background="#9999FF"  Margin="15" FontWeight="Bold" Height="35" Width="120"/>
         </StackPanel>

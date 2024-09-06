@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CMC_System"
         mc:Ignorable="d"
-        Title="ClaimRespondPage" Background="#009999"  Height="850" Width="800">
+        Title="ClaimRespondPage" Background="#009999"  Height="1390" Width="1300">
     <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
         <Grid.RowDefinitions>
             <!-- The Logo -->
@@ -17,53 +17,72 @@
             <!-- The buttons -->
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <!-- Image in the second row, centered horizontally -->
-        <Image Source="/Images/at the top.png" Stretch="Fill" Width="350" Height="120"  HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0"/>
-        <Border CornerRadius="10" Background="#FFCC99" BorderThickness="2" Margin="28" BorderBrush="Black" Grid.Row="1">
 
+        <!-- Image in the first row, centered horizontally -->
+        <Image Source="/Images/at the top.png" Stretch="Fill" Width="550" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0"/>
+
+        <Border CornerRadius="10" Background="#FFCC99" BorderThickness="2" Margin="20" BorderBrush="Black" Width="800" Height="1100" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1">
             <!-- Form fields for different claims -->
-            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
-                <TextBlock Text="Claim List:" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="18"/>
-                <!-- Firs Claim and its details-->
-                <TextBlock Text="Lecturer firstname and lastname:" HorizontalAlignment="Left" Margin="0,5,0,0" FontWeight="Bold" />
-                <TextBlock Text="Tumelo Morapedi" />
-                <TextBlock Text="Lecturer Email" HorizontalAlignment="Left"  FontWeight="Bold" />
-                <TextBlock Text="morapeditumelo@gmail.com" />
-                <TextBlock Text="Claim Description" HorizontalAlignment="Left"  FontWeight="Bold" />
-                <TextBlock Text="Good day sir, to recover outstanding remuneration for services rendered as a lecturer at [University of Johannesburg] from [01-09-2023]" />
-                <TextBlock Text="to [13-07-2024]. I provided teaching services in accordance with the agreed-upon contract terms," />
-                <TextBlock Text="including [briefly outline services provided, delivering lectures, conducting tutorials, and marking assessments]." />
-                <TextBlock Text="Despite fulfilling contractual obligations, I have not received the full amount owed for the specified period." />
-                <TextBlock Text="This claim seeks to recover the outstanding balance of [R 20 000] due for services rendered." />
-                <!-- StackPanel for buttons to be next to each other in a centeral position -->
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3">
-                    <Button Content="Approve"  Background="#9999FF"  Margin="15" FontWeight="Bold" Height="25" Width="120"/>
-                    <Button Content="Decline" Background="#9999FF"  Margin="15" FontWeight="Bold" Height="25" Width="120"/>
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20">
+                <TextBlock Text="Claim List:" HorizontalAlignment="Center" FontWeight="Bold" FontSize="26"/>
+
+                <!-- First Claim and its details -->
+                <TextBlock Text="Lecturer firstname:" HorizontalAlignment="Left" Margin="0,5,0,0" FontSize="18" FontWeight="Bold" />
+                <TextBlock Text="Tumelo" FontSize="18" />
+                <TextBlock Text="Lecturer lastname:" HorizontalAlignment="Left" Margin="0,5,0,0" FontSize="18" FontWeight="Bold" />
+                <TextBlock Text="Morapedi" FontSize="18"/>
+                <TextBlock Text="Lecturer Email:" HorizontalAlignment="Left" Margin="0,5,0,0" FontSize="18" FontWeight="Bold" />
+                <TextBlock Text="morapeditumelo@gmail.com" FontSize="18"/>
+                <TextBlock Text="Employee Number:" HorizontalAlignment="Left" Margin="0,5,0,0" FontSize="18" FontWeight="Bold" />
+                <TextBlock Text="077995" FontSize="18"/>
+                <TextBlock Text="Module Code:" HorizontalAlignment="Left" Margin="0,5,0,0" FontSize="18" FontWeight="Bold" />
+                <TextBlock Text="DATA6222" FontSize="18"/>
+                <TextBlock Text="Program:" HorizontalAlignment="Left" Margin="0,5,0,0" FontSize="18" FontWeight="Bold" />
+                <TextBlock Text="Database" FontSize="18"/>
+                <TextBlock Text="Monthly hours worked:" HorizontalAlignment="Left" Margin="0,5,0,0" FontSize="18" FontWeight="Bold" />
+                <TextBlock Text="130 hours" FontSize="18"/>
+                <TextBlock Text="Hourly Rate:" HorizontalAlignment="Left" Margin="0,5,0,0" FontSize="18" FontWeight="Bold" />
+                <TextBlock Text="R 250" FontSize="18"/>
+
+                <!-- StackPanel for buttons to be next to each other in a central position -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Content="Approve" Background="#9999FF" Margin="10" FontWeight="Bold" Height="35" Width="120"/>
+                    <Button Content="Decline" Background="#9999FF" Margin="10" FontWeight="Bold" Height="35" Width="120"/>
                 </StackPanel>
-                <Rectangle Fill="#000000" Height="2" Margin="0,10,0,0" />
-                <!--Second Claim-->
-                <TextBlock Text="Lecturer firstname and lastname:" HorizontalAlignment="Left" Margin="0,8,0,0" FontWeight="Bold" />
-                <TextBlock Text="Themba Dlamini" />
-                <TextBlock Text="Lecturer Email" HorizontalAlignment="Left"  FontWeight="Bold" />
-                <TextBlock Text="dlaminithemba@gmail.com" />
-                <TextBlock Text="Claim Description" HorizontalAlignment="Left"  FontWeight="Bold" />
-                <TextBlock Text="Good day sir, to recover outstanding remuneration for services rendered as a lecturer at [University of Pretoria] from [18-02-2023]" />
-                <TextBlock Text="to [01-08-2024]. I provided teaching services in accordance with the agreed-upon contract terms," />
-                <TextBlock Text="including [briefly outline services provided, delivering lectures, conducting tutorials, and marking assessments]." />
-                <TextBlock Text="Despite fulfilling contractual obligations, I have not received the full amount owed for the specified period." />
-                <TextBlock Text="This claim seeks to recover the outstanding balance of [R 26 000] due for services rendered." />
-                <!-- StackPanel for buttons to be next to each other in a centeral position -->
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3">
-                    <Button Content="Approve"  Background="#9999FF"  Margin="15" FontWeight="Bold" Height="25" Width="120"/>
-                    <Button Content="Decline" Background="#9999FF"  Margin="15" FontWeight="Bold" Height="25" Width="120"/>
+
+                <Rectangle Fill="#000000" Height="2" Margin="0,10,0,10" />
+
+                <!-- Second Claim -->
+                <TextBlock Text="Lecturer firstname:" HorizontalAlignment="Left" Margin="0,5,0,0" FontSize="18" FontWeight="Bold" />
+                <TextBlock Text="Siyabonga" FontSize="18"/>
+                <TextBlock Text="Lecturer lastname:" HorizontalAlignment="Left" Margin="0,5,0,0" FontSize="18" FontWeight="Bold" />
+                <TextBlock Text="Ngozo" FontSize="18"/>
+                <TextBlock Text="Lecturer Email:" HorizontalAlignment="Left" Margin="0,5,0,0" FontSize="18" FontWeight="Bold" />
+                <TextBlock Text="siyangozo@gmail.com" FontSize="18"/>
+                <TextBlock Text="Employee Number:" HorizontalAlignment="Left" Margin="0,5,0,0" FontSize="18" FontWeight="Bold" />
+                <TextBlock Text="039422" FontSize="18"/>
+                <TextBlock Text="Module Code:" HorizontalAlignment="Left" Margin="0,5,0,0" FontSize="18" FontWeight="Bold" />
+                <TextBlock Text="PROG6212" FontSize="18"/>
+                <TextBlock Text="Program:" HorizontalAlignment="Left" Margin="0,5,0,0" FontSize="18" FontWeight="Bold" />
+                <TextBlock Text="Programming" FontSize="18"/>
+                <TextBlock Text="Monthly hours worked:" HorizontalAlignment="Left" Margin="0,5,0,0" FontSize="18" FontWeight="Bold" />
+                <TextBlock Text="120 hours" FontSize="18"/>
+                <TextBlock Text="Hourly Rate:" HorizontalAlignment="Left" Margin="0,5,0,0" FontSize="18" FontWeight="Bold" />
+                <TextBlock Text="R 250" FontSize="18"/>
+
+                <!-- StackPanel for buttons to be next to each other in a central position -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Content="Approve" Background="#9999FF" Margin="10" FontWeight="Bold" Height="35" Width="120"/>
+                    <Button Content="Decline" Background="#9999FF" Margin="10" FontWeight="Bold" Height="35" Width="120"/>
                 </StackPanel>
             </StackPanel>
         </Border>
 
-        <!-- StackPanel for buttons to be next to each other in a centeral position -->
+        <!-- StackPanel for buttons to be next to each other in a central position -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3">
-            <Button Content="Home"  Background="#9999FF"  Margin="15" FontWeight="Bold" Height="35" Width="120"/>
-            <Button Content="Contractor Login" Background="#9999FF"  Margin="15" FontWeight="Bold" Height="35" Width="120"/>
+            <Button Content="Home" Background="#9999FF" Margin="15" FontWeight="Bold" Height="45" Width="120"/>
+            <Button Content="Contractor Login" Background="#9999FF" Margin="15" FontWeight="Bold" Height="45" Width="120"/>
         </StackPanel>
     </Grid>
+
 </Window>
