@@ -40,6 +40,10 @@
                 <Label Content="Contractor Address:" FontWeight="Bold"/>
                 <TextBlock x:Name="ContractorAddressTextBlock" Text="5 Kingsway Ave, Rossmore, Johannesburg, 2092" Height="26" Width="400" Margin="8,0,0,10"/>
 
+                <Label Content="Feedback from Contractor:" FontWeight="Bold"/>
+                <TextBlock x:Name="FeedbackTextBlock" Text="Dear lecturer, we have received your claim yet it is still being reviewed." Height="26" Width="400" Margin="8,0,0,10"/>
+                <TextBlock Text="Once the process is done your claim status will be updated." Height="20" Width="400" Margin="8,0,0,10"/>
+
                 <Label Content="Claim Status:" FontWeight="Bold"/>
                 <TextBlock x:Name="ClaimStatusTextBlock" Text="Pending" Height="26" Width="400" Margin="8,0,0,10"/>
                 
