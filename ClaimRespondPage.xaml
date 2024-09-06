@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CMC_System"
         mc:Ignorable="d"
-        Title="ClaimRespondPage" Background="#009999"  Height="1390" Width="1300">
+        Title="ClaimRespondPage" Background="#009999"  Height="1400" Width="1350">
     <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
         <Grid.RowDefinitions>
             <!-- The Logo -->
@@ -80,8 +80,8 @@
 
         <!-- StackPanel for buttons to be next to each other in a central position -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3">
-            <Button Content="Home" Background="#9999FF" Margin="15" FontWeight="Bold" Height="45" Width="120"/>
-            <Button Content="Contractor Login" Background="#9999FF" Margin="15" FontWeight="Bold" Height="45" Width="120"/>
+            <Button Content="Home" Background="#9999FF" Margin="15" FontWeight="Bold" Height="45" Width="120" Click="HomeButton_Click"/>
+            <Button Content="Contractor Login" Background="#9999FF" Margin="15" FontWeight="Bold" Height="45" Width="120" Click="ContractorLogin_Click"/>
         </StackPanel>
     </Grid>
 

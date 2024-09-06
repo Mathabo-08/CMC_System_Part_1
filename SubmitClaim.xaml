@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CMC_System"
         mc:Ignorable="d"
-        Title="SubmitClaim" Background="#009999" Height="750" Width="800">
+        Title="SubmitClaim" Background="#009999" Height="850" Width="800">
     
     <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
         <Grid.RowDefinitions>
@@ -51,8 +51,8 @@
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2">
             <Button Content="Add another module"  Background="#9999FF"  Margin="15" FontWeight="Bold" Height="35" Width="125"/>
             <Button Content="Submit Claim" Background="#9999FF"  Margin="15" FontWeight="Bold" Height="35" Width="120"/>
-            <Button Content="File Upload"  Background="#9999FF"  Margin="15" FontWeight="Bold" Height="35" Width="120"/>
-            <Button Content="Claim Status" Background="#9999FF"  Margin="15" FontWeight="Bold" Height="35" Width="120"/>
+            <Button Content="File Upload"  Background="#9999FF"  Margin="15" FontWeight="Bold" Height="35" Width="120"/> <!-- Lecturer can add supporting documents -->
+            <Button Content="Claim Status" Background="#9999FF"  Margin="15" FontWeight="Bold" Height="35" Width="120" Click="CliamStatusButton_Click"/>
         </StackPanel>
     </Grid>
 

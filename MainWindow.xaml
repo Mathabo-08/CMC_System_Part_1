@@ -28,8 +28,8 @@
 
         <!-- StackPanel with buttons in the third row -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3">
-            <Button Content="IC Lecturer" Background="#9999ff"  Margin="15" FontWeight="Bold" Height="35" Width="120"/>
-            <Button Content="Contractor" Background="#9999FF" Margin="15" FontWeight="Bold" Height="35" Width="120"/>
+            <Button Content="IC Lecturer" Background="#9999ff"  Margin="15" FontWeight="Bold" Height="35" Width="120" Click="ICLecturerButton_Click"/>
+            <Button Content="Contractor" Background="#9999FF" Margin="15" FontWeight="Bold" Height="35" Width="120" Click="ContractorButton_Click"/>
         </StackPanel>
     </Grid>
 </Window>

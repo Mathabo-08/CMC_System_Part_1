@@ -24,5 +24,20 @@ namespace CMC_System
         {
             InitializeComponent();
         }
+
+        // Buttons to navigate around the web app
+        private void ICLecturerButton_Click(object sender, RoutedEventArgs e)
+        {
+            LoginAsLecturer loginWindow = new LoginAsLecturer();
+            loginWindow.Show();
+            this.Close(); // Optional: Close the current window if needed
+        }
+        private void ContractorButton_Click(object sender, RoutedEventArgs e)
+        {
+            LoginAsContractor loginWindow = new LoginAsContractor();
+            loginWindow.Show();
+            this.Close(); // Optional: Close the current window if needed
+        }
+
     }
 }

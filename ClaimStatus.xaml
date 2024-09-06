@@ -100,7 +100,7 @@
         <!-- StackPanel for buttons to be next to each other in a centeral position -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3">
             <Button Content="Claim Submission"  Background="#9999ff"  Margin="15" FontWeight="Bold" Height="35" Width="120"/>
-            <Button Content="Home" Background="#9999ff"  Margin="15" FontWeight="Bold" Height="35" Width="120"/>
+            <Button Content="Home" Background="#9999ff"  Margin="15" FontWeight="Bold" Height="35" Width="120" Click="HomeButton_Click"/>
         </StackPanel>
     </Grid>
 </Window>

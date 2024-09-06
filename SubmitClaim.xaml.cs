@@ -23,5 +23,14 @@ namespace CMC_System
         {
             InitializeComponent();
         }
+
+        // Button to navigate to the claim status window
+        public void CliamStatusButton_Click(object sender, RoutedEventArgs e) 
+        {
+            ClaimStatus claimStatusWindow = new ClaimStatus();
+            claimStatusWindow.Show();
+            this.Close();
+        }
+
     }
 }

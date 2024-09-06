@@ -24,9 +24,18 @@ namespace CMC_System
             InitializeComponent();
         }
 
+        // Conditional form for payment of lecturer
         private void ClaimStatusTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        // Button to navigate to the mainwindow
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow homeWindow = new MainWindow();
+            homeWindow.Show();
+            this.Close();
         }
     }
 }

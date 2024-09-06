@@ -23,5 +23,13 @@ namespace CMC_System
         {
             InitializeComponent();
         }
+
+        // Button to navigate on the web app
+        public void HomeButton_Click(object sender, RoutedEventArgs e) 
+        {
+            MainWindow homeWindow = new MainWindow();
+            homeWindow.Show();
+            this.Close();
+        }
     }
 }
