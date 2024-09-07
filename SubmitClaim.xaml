@@ -16,10 +16,13 @@
             <!-- The buttons -->
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Border CornerRadius="10" Background="#FFCC99" BorderThickness="2" BorderBrush="Black">
+        <Border CornerRadius="10" Background="#FFCC99" Height="600" BorderThickness="2" BorderBrush="Black">
             <!-- Form fields for claim submission -->
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0">
                 <StackPanel Orientation="Vertical" Margin="10">
+                    <Label Content="Claim Date:" FontWeight="Bold"/>
+                    <TextBox x:Name="ClaimDateTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
+
                     <Label Content="Lecturer Name:" FontWeight="Bold"/>
                     <TextBox x:Name="LecturerNameTextBox" Height="26" Width="400" Margin="0,0,0,10"/>
 
